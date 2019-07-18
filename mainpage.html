@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>World Super Cars</title>
+<link rel="stylesheet1" type="text/css" href="css/stylesheet1.css">
+ <link rel="stylesheet" type="text/css" href="css/style.css">
+ <link rel="stylesheet" type="text/css" href="css/demo.css">
+ <link rel="stylesheet" type="text/css" href="css/slidebarnav.css">
+ <link rel="stylesheet" type="text/css" href="css/loinform.css">
+ <link rel="stylesheet" type="text/css" href="css/search.css">
+ <link rel="stylesheet" type="text/css" href="css/reklama.css">
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">
+ <!-->
+ var image1=new Image()
+ image1.src="mainpagesrc/lambo.jpg"
+ var image2=new Image()
+ image2.src="mainpagesrc/bmw.jpg"
+ var image3=new Image()
+ image3.src="mainpagesrc/ferari.jpg"
+ var image4=new Image()
+ image3.src="mainpagesrc/mers.jpg"
+ var image5=new Image()
+ image3.src="mainpagesrc/maserati.jpg"
+ //-->
+ </script>
+<script type="text/javascript">
+            jQuery(function($){
+                $('#search-trigger').click(function(){
+                    $('#search-input').toggleClass('search-input-open');
+                });
+ 
+                $(document).click(function(e){
+                    if(!$(e.target).closest('.ngen-search-form').length){
+                        $('#search-input').removeClass('search-input-open');
+                    }
+                })
+            });
+ </script>
+ 
+<style>
+     .form{
+    padding: 0px 0px 0px 0px;
+ }
+ .form-search-input{
+    width: 55px;
+    height: 35px;
+    border: 0;
+    outline: 0;
+    font-size: 21px;
+    padding: 0px 0px 0px 0px;
+    color: #151515;
+    transition: all 0.5s;
+ }
+ .search-input-open{
+    width: 220px !important;
+    padding: 0px 0px 0px 20px !important;
+    display: initial !important;
+ }
+ .form-search-submit{
+    display: inline-block;
+    width: 55px;
+    height: 43px;
+    border: 0;
+    outline: 0;
+    background-color: #151515;
+    font-size: 21px;
+    color: #FFF;
+    cursor: pointer;
+    text-align: center;
+ }
+ </style>
+</head>
+<body>
+
+<header class="head">
+ <div id="mySidenav" class="sidenav">
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>
+            <li><a href="mainpage.html">HOME</a></li>
+            <li><a href="car.html">RENT CARS</a>
+                <ul>
+                    <li><a href="maseratti.html" class="maserati">Maserati
+                    </a></li>
+                    <li><a href="lambo.html"><b>Lamborghini</b></a></li>
+                    <li><a href="mers.html"><b>MercedesBenz</b></a></li>
+                    <li><a href="bmw.html"><b>BMW</b></a></li>
+                    <li><a href="ferari.html"><b>Ferrari</b></a></li>
+
+                </ul>
+            </li>
+            <li><a href="mainpage.html">NEWS</a></li>
+            <li><a href="mainpage.html">CONTACTS</a></li>
+            </ul>
+            
+ </header>
+ <span style="font-size:30px;cursor:pointer" onclick="openNav()" >&#9776; Menu    <div class="sidebar">
+     <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Reservation</button>
+
+    <div id="id01" class="modal">
+  
+     <form class="modal-content animate" action="action_page.php">
+     <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+     </div>
+
+     <div class="container">
+      <label><b>Name</b></label>
+      <input type="text" placeholder="Name" name="uname" required>
+      <label>Car</label>
+          <select><option>Maserati</option>
+          <option>Lamborghini</option>
+          <option>MercadesBenz</option>
+          <option>BMW</option>
+          <option>Ferrari</option></select>
+
+
+      <label><b>Pick-up date</b></label>
+      <input type="date" name="Departure">
+      <label><b>Return date</b></label><input type="date" name="return">
+
+      <label><b>Pick-up location</b></label>
+      <input type="text" placeholder="Location" name="psw" required>
+      <input type="checkbox" checked="checked"> Return car to a different location
+        
+      <button type="submit">Make reservation </button>
+      
+     </div>
+
+     <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+     </div>
+     </form>
+     </div>
+
+     <script>
+      // Get the modal
+     var modal = document.getElementById('id01');
+
+     // When the user clicks anywhere outside of the modal, close it
+       window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+       }
+      }
+     </script>
+ </div>
+ </span>
+        <div>
+        <div class="form">
+            <form class="form-search ngen-search-form" action="" method="get">
+                <input type="text" name="q" id="search-input" class="form-search-input" placeholder="Search for names..." dir="ltr">
+                <span id="search-trigger" class="form-search-submit">&#x1f50e;</span>
+            </form>
+        </div>
+    <div>
+<script type="text/javascript"> 
+ function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+ }
+
+ function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+     (function($){
+    function floatLabel(inputType){
+        $(inputType).each(function(){
+            var $this = $(this);
+            // on focus add cladd active to label
+            $this.focus(function(){
+                $this.next().addClass("active");
+            });
+            //on blur check field and remove class if needed
+            $this.blur(function(){
+                if($this.val() === '' || $this.val() === 'blank'){
+                    $this.next().removeClass();
+                }
+            });
+        });
+    }
+    // just add a class of "floatLabel to the input field!"
+    floatLabel(".floatLabel");
+ })(jQuery);
+ }
+</script>
+
+<div id="slidebar">
+    
+ <img src="mainpagesrc/lambo.jpg" name="slide" width="100%" height="100%">
+
+ <script type="text/javascript">
+ <!--
+ var step=1
+ function slideit(){
+ document.images.slide.src=eval("image"+step+".src")
+ if(step<3)
+ step++
+ else
+ step=1
+ setTimeout("slideit()",10000)
+ }
+ slideit()
+ //-->
+ </script>
+</div>
+  
+  <img src="mainpagesrc/bmw-x6.jpg" width="100%" height="110%">
+    <div class="text">
+         <h1></h1>
+         </div>
+<section>
+     <h1 class="starttext">Start your travel planning here</h1>
+     <h2 class="starttext2">Discover destinations</h2>  
+
+
+ </section>     
+
+
+</body>
+</html>

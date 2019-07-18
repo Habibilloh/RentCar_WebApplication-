@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>World Super Cars</title>
+<style>
+ * {
+            margin:0px;
+            padding:0px;
+        }
+        #body{
+            background-image:url(darks.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            width:100%;
+        }
+      
+        #container ul {
+        list-style:none;
+        margin-left:0;
+        text-decoration: none;
+        
+      
+
+
+        }
+        nav{
+          background-color:#2e2f30;  
+      }
+        nav ul li a{
+            text-decoration: none;
+            font-family:sans-serif;
+            color:white;
+        }
+            #container ul li {
+                align-self: center;
+                background:#2e2f30;
+                width:150px;
+                border:10px;
+                height:50px;
+                line-height:50px;
+                text-align:center;
+                float:left;
+                color:white;
+                font-size:18px;
+                font-family: times;
+                text-decoration: none;
+                position:relative;
+             
+                
+
+                
+                opacity:0.9;
+                filter:alpha (opacity=90); /*IE8 earlier */ 
+            }
+            #container ul li:hover {
+                background-color:aqua;
+                transition: all 0.50s;
+
+            }
+            #container ul ul {
+                display:none;
+            }
+            #container ul li:hover > ul {
+            display:block;
+            }
+            #container ul ul ul {
+            margin-left:150px;
+            top:0px;
+            position:absolute;
+            } 
+         
+            #maserati {
+              height:50px;  
+            }
+            #lambo {
+                height:50px;
+            }
+    #mers {
+                height:60px;
+                align-self:center;
+            }
+    #bmw {
+                height:50px;
+            }
+    #ferari {
+                height:50px;
+            }
+        #head {
+                background-color:#3c3e42;
+
+            }
+
+        #car {
+          width:100%;
+           }
+        #search {
+            width:200px;
+            padding:16px;
+            border:1px solid #3c3e42;
+          }
+        #submit {
+            padding:16px;
+            background:#3c3e42;
+            border:1px solid #3c3e42;
+            color:white;
+            margin-left: -5px;
+            }
+        #submit:hover{
+                background:#818284;
+                transition: all 0.40s;
+</style>
+
+<script type="text/javascript">
+<!-->
+var image1=new Image()
+image1.src="lambo.jpg"
+var image2=new Image()
+image2.src="bmw.jpg"
+var image3=new Image()
+image3.src="ferari.jpg"
+var image4=new Image()
+image3.src="mers.jpg"
+var image5=new Image()
+image3.src="maserati.jpg"
+//-->
+</script>
+
+</head>
+<body>
+<div id="container" align="center">
+        <div id="nav_wrapper">
+        
+        <nav>
+        <ul>
+            <li><a href="mainpage.html">HOME</a></li>
+            <li><a href="car.html">RENT CARS</a>
+                <ul>
+                    <li><a href="maseratti.html" class="maserati"><img id="maserati" src="http://vignette1.wikia.nocookie.net/logopedia/images/b/b8/Maserati_logo.png/revision/latest?cb=20100630205529">
+                    </a></li>
+                    <li><a href="lambo.html"><img id="lambo" src="http://pngimg.com/upload/lamborghini_PNG10709.png"></a></li>
+                    <li><a href="mers.html"><img id="mers" src="http://cdn.pinthiscars.com/images/mercedes-logo-transparent-background-wallpaper-4.jpg"></a></li>
+                    <li><a href="bmw.html"><img id="bmw" src="http://pngimg.com/upload/car_logo_PNG1641.png"></a></li>
+                    <li><a href="ferari.html"><img id="ferari" src="http://pngimg.com/upload/car_logo_PNG1642.png"></a></li>
+
+                </ul>
+            </li>
+            <li><a href="mainpage.html">NEWS</a></li>
+            <li><a href="mainpage.html">CONTACTS</a></li>
+            </ul>
+            <form action="https://www.google.com">
+                <input type="text" placeholder="Search..." maxlength="20" id="search">
+                <input type="submit" value="GO!" id="submit">
+            </form>
+            </nav>
+           </div>
+
+            </div>
+
+    <div id="slidebar">
+    
+    <img src="lambo.jpg" name="slide" width="100%" height="100%">
+
+<script type="text/javascript">
+<!--
+var step=1
+function slideit(){
+document.images.slide.src=eval("image"+step+".src")
+if(step<3)
+step++
+else
+step=1
+setTimeout("slideit()",10000)
+}
+slideit()
+//-->
+</script>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LAMBORGHINI</title>
+<link rel="stylesheet" type="text/css" src="lamborghini.css">
+<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fjord+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Amarante|BioRhyme+Expanded|Faster+One|Finger+Paint|Nosifer" rel="stylesheet">
+<style type="text/css">
+html {
+background: grey;
+}
+
+body{
+font-family: 'Comfortaa', cursive;
+line-height: 2.5em;
+
+}
+header{
+	
+text-align: center;
+background: url(http://www.pngpix.com/wp-content/uploads/2016/06/PNGPIX-COM-White-Lamborghini-Aventador-Car-PNG-Image.png);
+color: white;
+font-size: 64px;
+}
+
+.spacer{
+height:650px;
+width: 2000px;
+}
+header ul{
+padding-bottom: 3em;  	
+background-color:#BDBDBD;
+text-decoration: none;
+}
+header li{
+display: table-column-group;
+font-size: 44px;
+list-style-position: all;
+}
+#container {
+	list-style:none;
+ text-align: center;
+}
+a{
+text-decoration: none;
+}
+a:hover{
+color: aqua;
+}
+.bandname{
+font-family: 'BioRhyme Expanded', serif;
+text-align: center;
+font-size: 50px;
+line-height: 0.5em;
+margin-right: 40%;
+padding-top: 5px;
+text-shadow: 3px 3px 20px #FFFF00;
+}
+nav{
+  height: 10px;
+  position: inherit;
+}
+nav ul li a{
+text-decoration: initial;
+font-family:sans-serif;
+color:black;
+background-color: transparent;
+}
+#container ul li {
+text-align: center;
+width:200px;
+height:1.3em;
+line-height:1.5em;
+text-align:right;
+margin-left: 7%; 
+float:left;
+font-size:20px;
+font-family: 'Comfortaa', cursive;
+
+}
+
+#container ul ul {
+display:none;
+}
+#container ul li:hover > ul {
+display:table-footer-group;
+position: relative;
+}
+.container-fluid {
+	text-align: center;
+			padding-top: 0.1px;
+	}
+
+	h4{
+		font-size: 100px;
+		font-family: 'Amarante', cursive;
+		position: relative;
+	}
+	.p {
+		text-align: center;
+		position: absolute;
+		font-size: 16px;
+		font-family: 'Amarante', cursive;
+	}
+	.bg-grey {
+			background-color: #f6f6f6;
+	}
+
+	.logo {
+			color: #f4511e;
+			font-size: 200px;
+	}
+	h2{
+		font-size: 34px;
+		font-family: sans-serif;
+		position: relative;
+	}
+	.thumbnail {
+			padding: 0 0 15px 0;
+			border: none;
+			border-radius: 0;
+	}
+	.thumbnail img {
+			width: 1600px;
+			height: 700px;
+			margin-bottom: 10px;
+	}
+	.thumbnail img {
+		-webkit-filter: drop-shadow(8px 8px 10px black); 
+		filter: drop-shadow(10px 10px 12px black);
+}
+	.carousel-control.right, .carousel-control.left {
+			background-image: none;
+			color: #f4511e;
+	}
+	.carousel-indicators li {
+			border-color: #f4511e;
+	}
+	.carousel-indicators li.active {
+			background-color: #f4511e;
+	}
+	.item h4 {
+			font-size: 19px;
+			line-height: 1.375em;
+			font-weight: 400;
+			font-style: italic;
+			margin: 70px 0;
+	}
+	.item span {
+			font-style: normal;
+	}
+	.panel {
+			border: 1px solid #f4511e; 
+			border-radius:0 !important;
+			transition: box-shadow 0.5s;
+	}
+	.panel:hover {
+			box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+	}
+	.panel-footer .btn:hover {
+			border: 1px solid #f4511e;
+			background-color: #fff !important;
+			color: #f4511e;
+	}
+	.panel-heading {
+			color: #fff !important;
+			background-color: #f4511e !important;
+			padding: 25px;
+			border-bottom: 1px solid transparent;
+			border-top-left-radius: 0px;
+			border-top-right-radius: 0px;
+			border-bottom-left-radius: 0px;
+			border-bottom-right-radius: 0px;
+	}
+	.panel-footer {
+			background-color: white !important;
+	}
+	.panel-footer h3 {
+			font-size: 32px;
+	}
+	.panel-footer h4 {
+			color: #aaa;
+			font-size: 14px;
+	}
+	.panel-footer .btn {
+			margin: 15px 0;
+			background-color: #f4511e;
+			color: #fff;
+	}
+
+footer {
+position: relative;
+width: 100%;
+background: #222;
+}
+
+form {
+margin-top: 21px;
+padding-top: 22px;
+border-top: 1px solid #d7d7d7;
+}
+
+form p {
+width:100%;
+height:100%;
+display: table;
+margin-bottom: 22px;
+padding: 0px;
+}
+
+form label {
+display: table-cell;
+width: 140px;
+padding-right: 20px;
+text-align: right;
+font-weight: bold;
+vertical-align: top;
+}
+
+form input[type="text"], form input[type="email"], form input[type="url"] {
+display: table-cell;
+width: 300px;
+height: 20px;
+border: 1px solid #d7d7d7;
+}
+
+form textarea {
+width: 300px;
+height: 100px;
+border: 1px solid #d7d7d7;
+}
+
+form input[type="submit"] {
+margin-left: 162px;
+}
+footer ul{
+	
+	text-decoration: none;
+	list-style: none;
+	text-align: justify-all;
+}
+
+footer {
+position: absolute;
+left: 0%;
+width: 100%;
+background: #222;
+}
+
+footer div {
+text-align: right;
+display: table-cell;
+width: 100%;
+color: white;
+text-decoration: none;
+}
+
+footer div section {
+display: table-cell;
+width: 300px;
+}
+
+footer #about{
+padding-right: 20px;
+color: white;
+font-size: 24px;
+font-family: Times;
+}
+ footer #blogroll {
+padding-right: 20px;
+color: white;
+font-size: 24px;
+font-family: Times;
+}
+ footer #popular {
+padding-right: 20px;
+color: white;
+font-size: 24px;
+font-family: Times;
+}
+footer #guide {
+padding-right: 20px;
+color: white;
+font-size: 24px;
+font-family: Times;
+}
+footer #follow {
+padding-right: 20px;
+color: white;
+font-size: 20px;
+font-family: Times;
+}
+
+footer h3 {
+color: white;
+}
+
+footer a {
+color: white;
+}
+
+footer li{
+float: right;
+padding: 0px 50px 0px 50px;
+font-size: 14px;
+}
+
+
+</style>
+</head>
+<body>
+<header>
+<div id="container" align="center">
+<div id="nav_wrapper">
+<div class="spacer">
+<div class="bandname">
+Lamborghini World 
+</div>
+</div>
+<nav>
+<ul>
+<li><a href="file:///C:/Users/UIT%208%EC%B8%B5/Desktop/Site/lamborghini.html">Home</a></li>
+<li><a href="cartype.html">Car Type</a>
+<ul>
+<li><a href="http://www.lambo.com.ua/cars/modification.php?ID=99">Gollardo</a></li>
+<li><a href="http://www.topgear.com/group/murcielago">Murcielago</a></li>
+<li><a href="https://www.lamborghini.com/en-en/models/huracan">Huracan</a></li>
+<li><a href="https://www.lamborghini.com/en-en/models/aventador">Aventador</a></li>
+
+</ul>
+</li>
+<li><a href="engine.html">Engine</a></li>
+<li><a href="https://www.lamborghini.com/en-en/contact-us">Contact</a></li>
+</ul>
+</nav>
+</br>
+</div>
+</div>
+</header>
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+<div class="p2">
+	<h4>Lamborghini Huracan</h4></br>
+	<p2>Discover all the new models of this exclusive car family, created to shape to your deepest emotions. Combining the highest expression of Lamborghini's power with the exclusive refinement of Italian handicraft, this series embodies authentic design and state-of-the-art mechanical technology.
+The Lamborghini Huracán is the perfect fusion of technology and design. With its crisp, streamlined lines, designed to cut through the air and tame the road, you'll get a thrill just by looking at it. The only thing better than taking in this beauty from a distance is actually touching it. The finest Italian craftsmanship lavished on finishes of unprecedented prestige and quality. Your heart will leap when you sit inside and press the ignition button, feeling what it means to have a naturally aspirated V10 engine behind you, and all the technology you need to control it right at your fingertips. Your eyes will enthrall you a final time once you take in the full-LED lighting system and the 12.3" TFT instrument panel, which provides an unrivalled driving experience.</p>
+	<div class="row text-center slideanim">
+		<div class="col-sm-4">
+			<div class="thumbnail">
+				<img src="http://www.pngpix.com/wp-content/uploads/2016/06/PNGPIX-COM-White-Lamborghini-Huracan-Car-PNG-Image-1.png" alt="Lamborghini">
+				<h2><strong>Design</strong></h2>
+				<p>Sculptured and sensual, the Huracán’s design is based on the spiky hexagonal forms of the carbon atom, while the seamless roof profile is an unmistakable mark of the Lamborghini DNA. The Huracán is unique even in the dark, thanks to the alluringly “technological” light of its full-LED lighting system. Choose your favourite Lamborghini Huracán and discover its technical specifications.</p>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="thumbnail">
+				<img src="http://www.pngpix.com/wp-content/uploads/2016/06/PNGPIX-COM-Lamborghini-Aventador-LP-White-Car-PNG-Image.png" alt="New York">
+ 
+				<h2><strong>CHOOSE YOUR OPTION</strong></h2>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="thumbnail">
+				<img src="http://www.pngpix.com/wp-content/uploads/2016/06/PNGPIX-COM-White-Lamborghini-Huracan-Car-PNG-Image.png" alt="San Francisco">
+				<h2><strong>Lamborghini Aventador</strong></h2>
+				<p>To us at Lamborghini, revolutionary thinking is a staple. Whether it is an aeronautics-inspired design, the technology of the V12 engine, or the extensive use of carbon fiber, going beyond the commonly-accepted limits is part of our philosophy. The new Aventador models have been designed to exceed the concept of performance itself, establishing a new benchmark for super sports cars, and turning the cars of the future into a present-day reality. A supercar family that has already become a legend in its own right.</p>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="thumbnail">
+				<img src="http://www.pngpix.com/wp-content/uploads/2016/06/PNGPIX-COM-White-Lamborghini-Aventador-Car-PNG-Image.png" alt="San Francisco" >
+				<h2><strong>Huracan Coupe</strong></h2>
+				<p>Lamborghini History</p>
+			</div>
+		</div>
+	</div><br>
+	
+	<h2>What our customers say</h2>
+	<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+	 
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<h4>"Lamborghini Company is the best. I am so happy with its cars!"<br><span style="font-style:normal;">Michael Roe, Vice President, Comment Box</span></h4>
+			</div>
+			<div class="item">
+				<h4>"One word... WOW!!"<br><span style="font-style:normal;">John Doe, Salesman, Rep Inc</span></h4>
+			</div>
+			<div class="item">
+				<h4>"Could I... BE any more happy with this company?"<br><span style="font-style:normal;">Chandler Bing, Actor, FriendsAlot</span></h4>
+			</div>
+		</div>
+
+	 
+<form action="#" method="post">
+<h3>Post a comment</h3>
+<p>
+<label for="name">Name</label>
+<input name="name" id="name" type="text" required />
+</p>
+<p>
+<label for="email">E-mail</label>
+<input name="email" id="email" type="email" required />
+</p>
+<p>
+<label for="website">Website</label>
+<input name="website" id="website" type="url" />
+</p>
+<p>
+<label for="comment">Comment</label>
+<textarea name="comment" id="comment" required></textarea>
+</p>
+<p><input type="submit" value="Post comment" /></p>
+</form>
+<footer>
+<div>
+<section id="about">
+<h3>REVIEWS</h3>
+<ul>
+<li><a href="#">First Drives</a></li>
+<li><a href="#">Instrumented Tests</a></li>
+<li><a href="#">Long Term Road Tests</a></li>
+<li><a href="#">Specialty Files</a></li>
+<li><a href="#">From the Review Vault</a></li>
+</ul>
+</section>
+<section id="blogroll">
+<h3>News</h3>
+<ul>
+<li><a href="#">Spy Photos</a></li>
+<li><a href="#">Auto SHows</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Netsetter</a></li>
+</ul>
+</section>
+<section id="popular">
+<h3>Features</h3>
+<ul>
+<li><a href="#">Columns</a></li>
+<li><a href="#">Tech Department</a></li>
+<li><a href="#">Gearbox</a></li>
+<li><a href="#">10Best</a></li>
+<li><a href="#">Shopping Advice</a></li>
+<li><a href="#">Video</a></li>
+</ul>
+</section>
+<section id="guide">
+<h3>BUYERS'S GUIDE</h3>
+<ul>
+<li><a href="#">2016 Editors' Choice</a></li>
+<li><a href="#">Lamborghini Gallardo</a></li>
+<li><a href="#">Lamborghini Aventador</a></li>
+<li><a href="#">Lamborghini Murcielago</a></li>
+<li><a href="#">Lamborghini Huracan</a></li>
+<li><a href="#">Lamborghini Veneno</a></li>
+</ul>
+</section>
+<section id="follow">
+<h3>FOLLOW US</h3>
+<ul>
+<li><a href="#">Backfires</a></li>
+<li><a href="#">Facebook</a></li>
+<li><a href="#">Twitter</a></li>
+<li><a href="#">Odnaklasniki</a></li>
+<li><a href="#">Instagram</a></li>
+<li><a href="#">You Tybe</a></li>
+</ul>
+</section>
+</div>
+</footer>
+
+</body>
+</html>
+

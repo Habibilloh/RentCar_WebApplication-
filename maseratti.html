@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Luxury Cars</title>
+    <link rel="stylesheet" type="text/css" src="maseratti.css">
+    <style>
+        * {
+            margin:0px;
+            padding:0px;
+        }
+        #body{
+            background-image:url(darks.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            width:100%;
+        }
+      
+        #container ul {
+        list-style:none;
+        margin-left:50px;
+        text-decoration: none;
+        
+      
+
+
+        }
+        nav{
+          background-color:#2e2f30;  
+
+      }
+        nav ul li a{
+            text-decoration: none;
+            font-family:sans-serif;
+            color:white;
+        }
+            #container ul li {
+                align-self: center;
+                background:#2e2f30;
+                width:150px;
+                border:10px;
+                height:50px;
+                line-height:50px;
+                text-align:center;
+                float:left;
+                color:white;
+                font-size:18px;
+                font-family: times;
+                text-decoration: none;
+                position:relative;
+                margin-left:10px;
+                
+
+
+                
+                opacity:0.9;
+                filter:alpha (opacity=90); /*IE8 earlier */ 
+            }
+            #container ul li:hover {
+                background-color:aqua;
+                transition: all 0.50s;
+
+            }
+            #container ul ul {
+                display:none;
+            }
+            #container ul li:hover > ul {
+            display:block;
+            }
+            #container ul ul ul {
+            margin-left:150px;
+            top:0px;
+            position:absolute;
+            } 
+         
+            #maserati {
+              height:50px;  
+            }
+            #lambo {
+                height:50px;
+            }
+    #mers {
+                height:60px;
+                align-self:center;
+            }
+    #bmw {
+                height:50px;
+            }
+    #ferari {
+                height:50px;
+            }
+            .logo {
+                height:60px;
+                margin-left:0;
+            }
+        #head {
+                background-color:#3c3e42;
+
+            }
+
+        #car {
+          width:100%;
+           }
+        #search {
+            width:200px;
+            padding:16px;
+            border:1px solid #3c3e42;
+          }
+        #submit {
+            padding:16px;
+            background:#3c3e42;
+            border:1px solid #3c3e42;
+            color:white;
+            margin-left: -5px;
+            }
+        #submit:hover{
+                background:#818284;
+                transition: all 0.40s;
+            }
+            .main1 {
+                background-color:#3c3e42;
+                margin:2px;
+                padding:10px;
+                font-size:110;
+                height:560px;
+                width:100%;
+                 } 
+            h1 {
+              font-size:150%;
+              color:#bdcfed; 
+              font-family:times;
+            }
+            p {
+                font-size:120%;
+                color:#d7d9dd;
+                margin:5px;
+                font-family:sans-serif; 
+            }
+            .gibli {
+                width:70%;
+                margin:10%
+            }
+
+            
+            #main {
+                width:100%;
+                height:1500px;
+                margin:1px ;
+                 column-count:4;
+                 padding:0;
+              
+            }
+            #buy{
+            padding:16px;
+            background:#272728;
+            border:1px solid #3c3e42;
+            color:#999a9b;
+            font-family:sans-serif;
+            margin-left:2px;
+            padding:auto;
+            transition: absolute;
+            margin-top: 20px;
+            clear: both;
+            display: inline;
+            margin-top:10px;
+
+
+
+            }
+            #buy:hover{
+                background:aqua;
+                transition: all 0.40s;
+            }
+             #buy1{
+            padding:16px;
+            background:#272728;
+            border:1px solid #3c3e42;
+            color:#999a9b;
+            font-family:sans-serif;
+            margin-left:2px;
+            padding:auto;
+            transition: absolute;
+            margin-top: 0;
+            clear: both;
+            display: inline;
+             margin-top: 70px;
+
+
+
+            }
+            #buy1:hover{
+                background:aqua;
+                transition: all 0.40s;
+            }
+             #buy2{
+            padding:16px;
+            background:#272728;
+            border:1px solid #3c3e42;
+            color:#999a9b;
+            font-family:sans-serif;
+            margin-left:2px;
+            padding:auto;
+            transition: absolute;
+            margin-top: 0;
+            clear: both;
+            display: inline;
+             margin-top: 83px;
+
+
+
+            }
+            #buy2:hover{
+                background:aqua;
+                transition: all 0.40s;
+            }
+#buy3{
+            padding:16px;
+            background:#272728;
+            border:1px solid #3c3e42;
+            color:#999a9b;
+            font-family:sans-serif;
+            margin-left:2px;
+            padding:auto;
+            transition: absolute;
+            margin-top: 0;
+            clear: both;
+            display: inline;
+             margin-top: 35px;
+
+
+
+            }
+            #buy3:hover{
+                background:aqua;
+                transition: all 0.40s;
+            }
+            
+
+                    
+        </style>
+</head>
+<body id="body">
+            
+        <div id="container" align="center">
+        <div id="nav_wrapper">
+        
+        <nav>
+        
+        <ul>
+            <li> <img src="logo3.png" class="logo"></li>
+            <li><a href="mainpage.html">HOME</a></li>
+            <li><a href="car.html">RENT CARS</a>
+                <ul>
+                    <li><a href="maseratti.html" class="maserati"><img id="maserati" src="http://vignette1.wikia.nocookie.net/logopedia/images/b/b8/Maserati_logo.png/revision/latest?cb=20100630205529">
+                    </a></li>
+                    <li><a href="lambo.html"><img id="lambo" src="http://pngimg.com/upload/lamborghini_PNG10709.png"></a></li>
+                    <li><a href="mers.html"><img id="mers" src="http://cdn.pinthiscars.com/images/mercedes-logo-transparent-background-wallpaper-4.jpg"></a></li>
+                    <li><a href="bmw.html"><img id="bmw" src="http://pngimg.com/upload/car_logo_PNG1641.png"></a></li>
+                    <li><a href="ferari.html"><img id="ferari" src="http://pngimg.com/upload/car_logo_PNG1642.png"></a></li>
+
+                </ul>
+            </li>
+            <li><a href="mainpage.html">NEWS</a></li>
+            <li><a href="mainpage.html">CONTACTS</a></li>
+            </ul>
+            <form action="https://www.google.com">
+                <input type="text" placeholder="Search..." maxlength="20" id="search">
+                <input type="submit" value="GO!" id="submit">
+            </form>
+            </nav>
+           </div>
+
+            </div>
+            <img id="car"  src="https://s-media-cache-ak0.pinimg.com/originals/db/2a/03/db2a031c0f5ceeb66bfb8843816e79d7.jpg">
+
+            <section id="main">
+            <div class="main1">
+            <img class="gibli" src="http://imganuncios.mitula.net/2015_maserati_quattroporte_s_q4_allentown_pa_6670049466448713570.jpg">
+                <h1>Maserati Ghibli</h1>
+                <p> Engine: 2.979cc V6 Twin Turbo petrol <br> Max Power: 350 PS (257 kW; 345hp) at 5000rmp <br> Torque: 500 N·m (369 lb·ft) between 1750–4500 rpm <br> Drive: RWD <br> Top Speed:263 km/h (163 mph) </p>
+                <input type="submit" value="View more..." id="buy">
+                <input type="submit" value="Order" id="buy">
+                </div>
+                <div class="main1">
+                <img class="gibli" src="http://www.cstatic-images.com/stock/900x600/1390410095064.jpg">
+                    <h1> Maserati Quattroporte S</h1>
+                    <p>Engine: 4,691 cc V8 <br> Max Power: 430 PS (316 kW; 424 bhp) at 7000 rpm <br> Torque: 490 N·m (361 lb·ft) at 4750 rpm <br> CO2 emissions:365g/km <br> Top Speed:280 km/h (174 mph)</p>
+                     <input type="submit" value="View more..." id="buy3">
+                <input type="submit" value="Order" id="buy3">
+                </div>
+                <div class="main1">
+                <img class="gibli" src="http://s3.caradvice.com.au/thumb/1000/562/wp-content/uploads/2013/02/Maserati-GranTurismo-MC-Stradale-1-e1362001213480.jpg">
+                    <h1> Maserati Gran Turismo </h1>
+                    <p>Engine: 4,244 cc (259.0 cu in) 90° V8 <br> Max Power: 405 PS (298 kW; 399 hp) at 7,100 <br> Torque: 460 N·m (339 lb·ft) at 4,750 <br> Top Speed:285 km/h (177 mph)</p>
+                     <input type="submit" value="View more..." id="buy2">
+                <input type="submit" value="Order" id="buy2">
+                </div>
+                <div class="main1">
+                <img class="gibli" src="http://topruscar.ru/sites/default/files/news/news221_005.jpg">
+                    <h1> Maserati Levante </h1>
+                    <p>Engine: 4,300 cc (260.0 cu in) 90° V9 <br> Max Power: 410 PS (300 kW; 401 hp) at 7,250 <br> Torque: 467 N·m (342 lb·ft) at 4,758 <br> Top Speed:290 km/h (179 mph)</p>
+                     <input type="submit" value="View more..." id="buy1">
+                <input type="submit" value="Order" id="buy1">
+                </div>
+                </section>
+
+
+</body>
+</html>

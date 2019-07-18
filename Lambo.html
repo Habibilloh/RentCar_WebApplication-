@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Luxury Cars</title>
+    <link rel="stylesheet" type="text/css" src="maseratti.css">
+    <style>
+        * {
+            margin:0px;
+            padding:0px;
+        }
+        #body{
+            background-image:url(darks.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            width:100%;
+        }
+      
+        #container ul {
+        list-style:none;
+        margin-left:0;
+        text-decoration: none;
+        
+      
+
+
+        }
+        nav{
+          background-color:#421e3b;  
+      }
+        nav ul li a{
+            text-decoration: none;
+            font-family:sans-serif;
+            color:white;
+        }
+            #container ul li {
+                align-self: center;
+                background:#421e3b;
+                width:150px;
+                border:10px;
+                height:50px;
+                line-height:50px;
+                text-align:center;
+                float:left;
+                color:white;
+                font-size:18px;
+                font-family: times;
+                text-decoration: none;
+                position:relative;
+             
+                
+
+                
+                opacity:0.9;
+                filter:alpha (opacity=90); /*IE8 earlier */ 
+            }
+            #container ul li:hover {
+                background-color:#23001c;
+                transition: all 0.50s;
+
+            }
+            #container ul ul {
+                display:none;
+            }
+            #container ul li:hover > ul {
+            display:block;
+            }
+            #container ul ul ul {
+            margin-left:150px;
+            top:0px;
+            position:absolute;
+            } 
+         
+            #maserati {
+              height:50px;  
+            }
+            #lambo {
+                height:50px;
+            }
+    #mers {
+                height:60px;
+                align-self:center;
+            }
+    #bmw {
+                height:50px;
+            }
+    #ferari {
+                height:50px;
+            }
+        #head {
+                background-color:#3c3e42;
+
+            }
+
+        #car {
+          width:100%;
+           }
+        #search {
+            width:200px;
+            padding:16px;
+            border:1px solid #3c3e42;
+            position:relative; 
+           
+          }
+        #submit {
+            padding:16px;
+            background:#3c3e42;
+            border:1px solid #3c3e42;
+            color:white;
+            margin-left: -5px;
+            
+            margin-right:10px;
+            }
+        #submit:hover{
+                background:#818284;
+                transition: all 0.40s;
+            }
+            .main1 {
+                background-color:#421e3b;
+                margin:2px;
+                padding:10px;
+                font-size:110;
+                height:560px;
+                width:100%;
+                 } 
+            h1 {
+              font-size:150%;
+              color:#bdcfed; 
+              font-family:times;
+            }
+            p {
+                font-size:120%;
+                color:#d7d9dd;
+                margin:5px;
+                font-family:sans-serif; 
+            }
+            .gibli {
+                width:70%;
+                margin:10%
+            }
+
+            
+            #main {
+                width:100%;
+                height:1500px;
+                margin:1px ;
+                 column-count:4;
+                 padding:0;
+              
+            }
+            #buy{
+            padding:16px;
+            background:#272728;
+            border:1px solid #3c3e42;
+            color:#999a9b;
+            font-family:sans-serif;
+            margin-left:2px;
+            padding:auto;
+            transition: absolute;
+            margin-top: 0px;
+            clear: both;
+            display: inline;
+            margin-top:5px;
+
+
+
+            }
+            #buy:hover{
+                background:aqua;
+                transition: all 0.40s;
+            }
+             #buy1{
+            padding:16px;
+            background:#2b0244;
+            border:1px solid #3c3e42;
+            color:#999a9b;
+            font-family:sans-serif;
+            margin-left:2px;
+            padding:auto;
+            transition: absolute;
+            margin-top: 0;
+            clear: both;
+            display: inline;
+             margin-top: 40px;
+
+
+
+            }
+            #buy1:hover{
+                background:aqua;
+                transition: all 0.40s;
+            }
+             #buy2{
+            padding:16px;
+            background:#612784;
+            border:1px solid #3c3e42;
+            color:#999a9b;
+            font-family:sans-serif;
+            margin-left:2px;
+            padding:auto;
+            transition: absolute;
+            margin-top: 0;
+            clear: both;
+            display: inline;
+             margin-top: 0px;
+
+
+
+            }
+            #buy2:hover{
+                background:aqua;
+                transition: all 0.40s;
+            }
+#buy3{
+            padding:16px;
+            background:#272728;
+            border:1px solid #3c3e42;
+            color:#999a9b;
+            font-family:sans-serif;
+            margin-left:2px;
+            padding:auto;
+            transition: absolute;
+            margin-top: 0;
+            clear: both;
+            display: inline;
+             margin-top: 30px;
+
+
+
+            }
+            #buy3:hover{
+                background:aqua;
+                transition: all 0.40s;
+            }
+#footer {
+    
+    width:100%;
+    border-top:0px solid #252525;
+    font-size:18px;
+    font-family:"Times New Roman",Dotum;
+    color:gray;
+    column-count:4 
+
+    text-align:justify;
+    position: absolute;  
+   /* height:32px;*/
+  /*  margin-bottom:8px;
+    border-bottom:1px solid #c2c2c2;
+    text-indent:-9999em; 
+     }
+            
+
+                    
+        </style>
+</head>
+<body id="body">
+    
+        
+        <div id="container" align="center">
+        <div id="nav_wrapper">
+        
+        <nav>
+        <ul>
+            <li><a href="mainpage.html">HOME</a></li>
+            <li><a href="car.html">RENT CARS</a>
+                <ul>
+                    <li><a href="maseratti.html" class="maserati"><img id="maserati" src="http://vignette1.wikia.nocookie.net/logopedia/images/b/b8/Maserati_logo.png/revision/latest?cb=20100630205529">
+                    </a></li>
+                    <li><a href="lambo.html"><img id="lambo" src="http://pngimg.com/upload/lamborghini_PNG10709.png"></a></li>
+                    <li><a href="mers.html"><img id="mers" src="http://cdn.pinthiscars.com/images/mercedes-logo-transparent-background-wallpaper-4.jpg"></a></li>
+                    <li><a href="bmw.html"><img id="bmw" src="http://pngimg.com/upload/car_logo_PNG1641.png"></a></li>
+                    <li><a href="ferari.html"><img id="ferari" src="http://pngimg.com/upload/car_logo_PNG1642.png"></a></li>
+
+                </ul>
+            </li>
+            <li><a href="mainpage.html">NEWS</a></li>
+            <li><a href="mainpage.html">CONTACTS</a></li>
+            </ul>
+            <form action="https://www.google.com">
+                <input type="text" placeholder="Search..." maxlength="20" id="search">
+                <input type="submit" value="GO!" id="submit">
+            </form>
+            </nav>
+           </div>
+           <img id="car"  src="https://todolamborghini.files.wordpress.com/2013/05/tumblr_mm51xpqwnt1rqd3aeo1_1280.jpg">
+
+            </div>
+            <section id="main">
+            <div class="main1">
+            <img class="gibli" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGC2zd8GCNDX-5a1muPNeSI1VFN2v1EB6AuEM4j6srX4OetA33">
+                <h1>Lamborghini Gallardo</h1>
+                <p> Engine: 5,204 cc (5.204 L; 317.6 cu in) Odd firing V10 40 valves DOHC <br> Max Power: 560 PS (412 kW; 552 hp)@8000<br> Torque: 540 N쨌m (398 lb쨌ft)@6500 <br> Drive: RWD <br> Top Speed:325 km/h (202 mph) </p>
+                <input type="submit" value="View more..." id="buy">
+                <input type="submit" value="Order" id="buy">
+                </div>
+                <div class="main1">
+                <img class="gibli" src="http://i.infocar.ua/img/models/1271/foto_003.jpg">
+                    <h1> Lamborghini Murcielago S</h1>
+                    <p>Engine: 6,496 cc (6.496 L; 396.4 cu in) V12 <br> Max Power:  640 PS (471 kW; 631 hp) at 8000 rpm. <br> Torque: 660 N쨌m (490 lbf쨌ft) of torque at 6500 rpm <br> Top Speed official: 210 mph (338 km/h)</p>
+                     <input type="submit" value="View more..." id="buy3">
+                <input type="submit" value="Order" id="buy3">
+                </div>
+                <div class="main1">
+                <img class="gibli" src="http://carlook.net/data/db_photos/lamborghini/aventador/1st/lamborghini_aventador_1st_coupe2d-3050.jpg">
+                    <h1> Lamborghini Aventador </h1>
+                    <p>Engine: 6,498 cc (396.5 cu in)
+                    <br> Max Power: 700 PS (510 kW; 690 bhp) @ 8,250 rpm<br>
+                    Power to weight 432 PS (318 kW; 426 bhp) per tonne <br> Torque: 689 N쨌m (508 lb쨌ft) @ 5,500 rpm. Top Speed:354 km/h (220 mph)</p>
+                     <input type="submit" value="View more..." id="buy2">
+                <input type="submit" value="Order" id="buy2">
+                </div>
+                <div class="main1">
+                <img class="gibli" src="http://gtspirit.com/wp-content/uploads/2015/06/IMG_1760.jpg">
+                    <h1> Lamborghini Huracan </h1>
+                    <p>Engine: 5,204 cm3 (317.6 cu in) <br> Max Power: 610 PS (449 kW; 602 hp) @ 8,250 rpm<br> Torque: 560 N쨌m (413 lb쨌ft) @ 6,500 rpm
+                    <br> Top Speed:342 km/h (212.5 mph)</p>
+                     <input type="submit" value="View more..." id="buy1">
+                <input type="submit" value="Order" id="buy1">
+                </div>
+                </section>
+                <div id="footer">
+                    <div class="footMenu">
+                        <a href="[##_localog_link_##]">MEDIA LOG</a>
+                        <span class="txt_bar">|</span>
+                        <a href="[##_taglog_link_##]">LOCATION LOG</a>
+                        <span class="txt_bar">|</span>
+                        <a href="[##_blog_link_##]media">GUEST BOOK</a>
+                        <span class="txt_bar">|</span>
+                        <a href="[##_guestbook_link_##]">ADMIN</a>
+                        <span class="txt_bar">|</span>
+                        <a href="[##_owner_url_##]">WRITE</a>
+                        <a href="[##_localog_link_##]">MEDIA LOG</a>
+                        <span class="txt_bar">|</span>
+                        <a href="[##_localog_link_##]">MEDIA LOG</a>
+                        <span class="txt_bar">|</span>
+                        <a href="[##_localog_link_##]">MEDIA LOG</a>
+                        <span class="txt_bar">|</span>
+                        <a href="[##_localog_link_##]">MEDIA LOG</a>
+                        <span class="txt_bar">|</span>
+                        <a href="[##_localog_link_##]">MEDIA LOG</a>
+                        <span class="txt_bar">|</span>
+                        <a href="[##_localog_link_##]">MEDIA LOG</a>
+                        <span class="txt_bar">|</span>
+                        <a href="[##_localog_link_##]">MEDIA LOG</a>
+                        <span class="txt_bar">|</span>
+                        <a href="[##_localog_link_##]">MEDIA LOG</a>
+                        <span class="txt_bar">|</span>
+                        <a href="[##_localog_link_##]">MEDIA LOG</a>
+                        <span class="txt_bar">|</span>
+                    </div>
+                </div>
+
+
+</body>
+</html>
